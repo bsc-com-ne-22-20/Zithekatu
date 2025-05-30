@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: agrigpt-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false  # You will set this manually in Render's dashboard
