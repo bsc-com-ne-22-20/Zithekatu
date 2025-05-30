@@ -13,7 +13,8 @@ class Farmer_AgriGpt:
     def __init__(self, api_key):
         self.api_key = api_key
         self.base_url = "https://api.groq.com/openai/v1/chat/completions"
-        self.model = "qwen:7b"  # You can change this to another Qwen model on Groq
+        self.model = "llama3-8b-8192"
+
 
     def ask_soil_health(self, question):
         headers = {
